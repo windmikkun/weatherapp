@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .weather-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .weather-card .loading {
+    text-align: center;
+  }
+  
+  .weather-icon {
+    width: 64px;
+  }
+  
+  .temp {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  

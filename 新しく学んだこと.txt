@@ -1,0 +1,33 @@
+Promise
+    JSで非同期処理を扱うためのオブジェクト
+
+.then
+    asyncのように一回処理を待たせる。
+
+
+非同期処理
+    時間がかかる処理が完了する前に次の処理を進める仕組み  (並列作業？)
+        例 APIリクエスト, ファイル読み込み, タイマー
+    二つの関数を使用する
+        resolve :処理が成功した際の関数
+        reject  :処理が失敗した際の関数
+
+const
+    定数のため宣言時に中身を決めないといけない。　変更不可
+
+async/await
+    async : 関数の前に付けることで非同期であることを示す。
+        例 async function getMessage() { return ""こんにちは"}
+    await : 処理がおわるのを待つ。必ずasync関数の中で使用する。
+        例 async function showMessage() {
+            const message = await getMessage(); // getMessageが終わるのを待つ
+            console.log(message); //　結果を表示する
+        }
+
+        この場合showMessage();が実行されるとgetMessage()が終了されるのを待ち、結果をmessageに代入する。
+
+fetch
+    非同期通信でリクエストをし、レスポンスを取得できるメソッド　→ サーバー上にあるデータを取得する方法
+        返す値がPromiseのように成功か失敗になるため成功した場合と失敗した場合の記述をする必要がある。
+Fetch API
+    JSのfetchメソッドを使用して、外部データ取得が可能になる
