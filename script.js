@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', getWeatherData);
 
 //speechSynthesis機能
 //利用可能か確認
-if(!'speechSynthesis' in window) {
-    alert("このブラウザは音声合成に対応していません")
+if('speechSynthesis' in window) {
+    alert("このブラウザは音声合成に対応しています")
 } 
 
 //現在の位置を取得
